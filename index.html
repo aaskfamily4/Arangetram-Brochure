@@ -68,9 +68,9 @@
     .cover-decor[_ngcontent-ng-c2308020386] {
       position: relative;
       justify-self: center;
-      width: min(100%, 260px);
+      width: min(100%, 310px);
       height: auto;
-      max-height: 78%;
+      max-height: 82%;
       object-fit: contain;
       object-position: center;
       opacity: 0.9;
@@ -239,14 +239,14 @@
 
     .section-card[_ngcontent-ng-c2308020386] {
       border-radius: 12px;
-      border: 1px solid rgba(125, 128, 171, 0.18);
+      border: 1px solid rgba(125, 128, 171, 0.16);
       border-top: 3px solid var(--gold);
       background:
         linear-gradient(180deg,
-          rgba(255, 255, 255, 0.22),
-          rgba(255, 255, 255, 0.08));
+          rgba(255, 255, 255, 0.14),
+          rgba(255, 255, 255, 0.04));
       padding: 1.4rem 1.2rem 1.2rem;
-      box-shadow: 0 10px 24px rgba(92, 117, 141, 0.05);
+      box-shadow: 0 8px 20px rgba(92, 117, 141, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.12);
     }
 
     .section-header[_ngcontent-ng-c2308020386] {
@@ -279,6 +279,7 @@
       margin: 0.6rem 0;
       line-height: 1.65;
       color: var(--ink-strong);
+      font-weight: 500;
     }
 
     .welcome-body[_ngcontent-ng-c2308020386] {
@@ -293,7 +294,7 @@
     .welcome-photo[_ngcontent-ng-c2308020386] {
       width: min(100%, 920px);
       height: auto;
-      max-height: 540px;
+      max-height: none;
       object-fit: contain;
       object-position: center center;
       border: 2px solid var(--gold);
@@ -316,7 +317,7 @@
       color: var(--ink-strong);
       font-size: clamp(0.9rem, 0.85rem + 0.22vw, 1.08rem);
       text-align: left;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 0.01em;
     }
 
@@ -368,11 +369,12 @@
       display: flex;
       flex-direction: column;
       gap: 0;
-      border: 1px solid rgba(107, 117, 155, 0.18);
+      border: 1px solid rgba(107, 117, 155, 0.12);
       border-left: 4px solid var(--gold);
       border-radius: 10px;
       padding: 0.85rem 0.9rem;
-      background: rgba(255, 255, 255, 0.32);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
       transition: border-color 0.2s;
       color: var(--ink-strong);
     }
@@ -416,15 +418,24 @@
     .program-meta[_ngcontent-ng-c2308020386] {
       margin: 0.22rem 0 0 !important;
       font-size: 0.8rem;
-      color: var(--ink-muted) !important;
-      letter-spacing: 0.03em;
+      color: #6f2f42 !important;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 800;
+      display: inline-block;
+      padding: 0;
+      border-radius: 0;
+      background: transparent;
+      border: none;
+      line-height: 1.5;
     }
 
     .program-desc[_ngcontent-ng-c2308020386] {
       margin: 0.4rem 0 0 !important;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       color: var(--ink-strong) !important;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-weight: 500;
     }
 
     .centerpiece-badge[_ngcontent-ng-c2308020386] {
@@ -477,8 +488,10 @@
     }
 
     .profile-text[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386] {
-      font-size: 0.93rem;
-      line-height: 1.7;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: var(--ink-strong);
+      font-weight: 500;
     }
 
     .orchestra-note[_ngcontent-ng-c2308020386] {
@@ -494,11 +507,12 @@
     }
 
     .orch-card[_ngcontent-ng-c2308020386] {
-      border: 1px solid rgba(111, 125, 161, 0.18);
+      border: 1px solid rgba(111, 125, 161, 0.12);
       border-top: 2px solid var(--gold);
       border-radius: 10px;
       padding: 0.9rem;
-      background: rgba(255, 255, 255, 0.28);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
       display: flex;
       flex-direction: column;
       gap: 0.45rem;
@@ -584,12 +598,13 @@
     }
 
     .orch-card[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386] {
-      font-size: 0.85rem;
-      line-height: 1.65;
-      color: var(--ink-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: var(--ink-strong);
       margin: 0 0 0.8rem 0;
       padding: 0.6rem 0 0 0;
-      opacity: 0.95;
+      opacity: 1;
+      font-weight: 500;
     }
 
     .orch-card[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386]:last-of-type {
@@ -640,18 +655,19 @@
       max-width: 280px;
       background:
         linear-gradient(135deg,
-          rgba(240, 208, 96, 0.06),
-          rgba(192, 128, 24, 0.12));
-      border: 1px solid rgba(240, 208, 96, 0.25);
+          rgba(255, 255, 255, 0.12),
+          rgba(232, 215, 181, 0.05));
+      border: 1px solid rgba(240, 208, 96, 0.18);
       border-radius: 6px;
       padding: 1.4rem 1.6rem;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
     }
 
     .guest-label[_ngcontent-ng-c2308020386] {
       font-size: 0.7rem;
       text-transform: uppercase;
       letter-spacing: 0.18em;
-      color: var(--saffron-soft);
+      color: var(--rose-deep);
       font-weight: 700;
       margin-bottom: 0.6rem;
     }
@@ -659,8 +675,9 @@
     .guest-name[_ngcontent-ng-c2308020386] {
       font-family: "Cinzel Decorative", serif;
       font-size: 1.05rem;
-      color: var(--gold-light);
+      color: var(--ink-strong);
       line-height: 1.4;
+      font-weight: 700;
     }
 
     .guest-divider[_ngcontent-ng-c2308020386] {
@@ -725,48 +742,41 @@
       }
 
       .cover-page[_ngcontent-ng-c2308020386] {
-        padding: 1.5rem 1rem 0;
-        min-height: 600px;
+        grid-template-columns: 1fr;
+        padding: 1.1rem 0.9rem 1.4rem;
+        min-height: 520px;
         justify-content: flex-start;
       }
 
       .cover-decor[_ngcontent-ng-c2308020386] {
-        width: clamp(120px, 38vw, 220px);
-        height: clamp(220px, 52vw, 300px);
-        bottom: 10px;
+        width: min(68vw, 200px);
+        height: auto;
+        max-height: 220px;
+        margin: 0.2rem auto 0.8rem;
         object-fit: contain;
-        object-position: center bottom;
+        object-position: center;
+        position: relative;
       }
 
       .cover-decor-left[_ngcontent-ng-c2308020386] {
-        left: 0;
+        left: auto;
       }
 
       .cover-decor-right[_ngcontent-ng-c2308020386] {
-        right: 0;
+        right: auto;
       }
 
       .cover-content[_ngcontent-ng-c2308020386] {
-        padding-bottom: calc(34% + 24px);
+        padding-bottom: 0;
+        gap: 0.35rem;
       }
 
       .cover-page[_ngcontent-ng-c2308020386]::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 50%;
-        background:
-          linear-gradient(to top,
-            rgba(15, 4, 1, 0.75) 0%,
-            transparent 100%);
-        pointer-events: none;
-        z-index: 2;
+        display: none;
       }
 
       .sloka[_ngcontent-ng-c2308020386] {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
 
       .cover-page[_ngcontent-ng-c2308020386] h1[_ngcontent-ng-c2308020386] {
@@ -1002,20 +1012,23 @@
               <div _ngcontent-ng-c2308020386="" class="program-body">
                 <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">2
                     &nbsp;·&nbsp;</span>KANCHA DALAYA DAKSHI</h3>
-                <p _ngcontent-ng-c2308020386="" class="program-desc">A beautiful devotional composition describing the radiant beauty and compassionate grace of the divine Mother in Kamalamanohari Ragam set to Adhi thalam.</p>
+                <p _ngcontent-ng-c2308020386="" class="program-meta">Ragam – Kamalamanohari &nbsp;|&nbsp; Thalam – Adi</p>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A beautiful devotional composition describing the radiant beauty and compassionate grace of the divine Mother in Kamalamanohari Ragam set to Adi thalam.</p>
               </div>
             </li>
             <li _ngcontent-ng-c2308020386="">
               <div _ngcontent-ng-c2308020386="" class="program-body">
                 <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">3
                     &nbsp;·&nbsp;</span>VARNAM</h3>
-                <p _ngcontent-ng-c2308020386="" class="program-desc">A traditional varnam depicting a love-lorn nayika longing for Lord Muruga. Her sakhi approaches the Lord as her messenger, appealing to his compassion and urging him to come to the maiden before her unbearable longing breaks her heart. The sakhi describes the nayika’s intense suffering and pleads with Muruga to hasten to her. A composition of Shri Papanasam Sivan in Sriranjani ragam set to Aadi thalam.</p>
+                <p _ngcontent-ng-c2308020386="" class="program-meta">Ragam – Sriranjani &nbsp;|&nbsp; Thalam – Adi</p>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A traditional varnam depicting a love-lorn nayika longing for Lord Muruga. Her sakhi approaches the Lord as her messenger, appealing to his compassion and urging him to come to the maiden before her unbearable longing breaks her heart. The sakhi describes the nayika’s intense suffering and pleads with Muruga to hasten to her. A composition of Shri Papanasam Sivan in Sriranjani ragam set to Adi thalam.</p>
               </div>
             </li>
             <li _ngcontent-ng-c2308020386="">
               <div _ngcontent-ng-c2308020386="" class="program-body">
                 <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">4
                     &nbsp;·&nbsp;</span>AADI KONDAAR</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-meta">Ragam – Mayamalavagowla &nbsp;|&nbsp; Thalam – Adi</p>
                 <p _ngcontent-ng-c2308020386="" class="program-desc">A vibrant ode to Lord Nataraja, celebrating his majestic grace and bliss of Shiva’s cosmic dance through dynamic nritta and expressive abhinaya. A composition of Muthu Thandavar in Ragam: Mayamalavagowla set to Adi Thalam.</p>
               </div>
             </li>
@@ -1023,6 +1036,7 @@
               <div _ngcontent-ng-c2308020386="" class="program-body">
                 <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">5
                     &nbsp;·&nbsp;</span>CHALIYE KUNJANAMO</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-meta">Ragam – Vrindavani &nbsp;|&nbsp; Thalam – Adi</p>
                 <p _ngcontent-ng-c2308020386="" class="program-desc">A graceful portrayal of Radha and Krishna, this composition captures the playful charm and tender emotions of their divine love. Through expressive abhinaya and lyrical movement, the dancer brings alive the beauty of Vrindavan and the enchanting presence of Krishna. A composition of Swati Tirunal in Ragam: Vrindavani set to Adi Thalam.</p>
               </div>
             </li>
@@ -1030,14 +1044,16 @@
               <div _ngcontent-ng-c2308020386="" class="program-body">
                 <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">6
                     &nbsp;·&nbsp;</span>SNAKE DANCE</h3>
-                <p _ngcontent-ng-c2308020386="" class="program-desc">A captivating Bharatanatyam composition inspired by the graceful, sinuous movements of the serpent. Through rhythmic footwork, expressive gestures, and fluid movements, the dancer brings alive the mystery, energy, and hypnotic beauty of the snake in Punnagavarali ragam set to Adhi thalam.</p>
+                <p _ngcontent-ng-c2308020386="" class="program-meta">Ragam – Punnagavarali &nbsp;|&nbsp; Thalam – Adi</p>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A captivating Bharatanatyam composition inspired by the graceful, sinuous movements of the serpent. Through rhythmic footwork, expressive gestures, and fluid movements, the dancer brings alive the mystery, energy, and hypnotic beauty of the snake in Punnagavarali ragam set to Adi thalam.</p>
               </div>
             </li>
             <li _ngcontent-ng-c2308020386="">
               <div _ngcontent-ng-c2308020386="" class="program-body">
                 <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">7
                     &nbsp;·&nbsp;</span>THILLANA</h3>
-                <p _ngcontent-ng-c2308020386="" class="program-desc">Thillana is a traditional finale dance composition in Bharatanatyam, celebrated for its intricate footwork, rhythmic patterns, and sculpturesque poses. A vibrant celebration of Lord Krishna, this thillana captures his playful charm, grace, and divine beauty. Composition of the legendary composer, Shri Lalgudi Jayaraman in Madhuvanthi ragam set to Adhi thalam.</p>
+                <p _ngcontent-ng-c2308020386="" class="program-meta">Ragam – Madhuvanthi &nbsp;|&nbsp; Thalam – Adi</p>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">Thillana is a traditional finale dance composition in Bharatanatyam, celebrated for its intricate footwork, rhythmic patterns, and sculpturesque poses. A vibrant celebration of Lord Krishna, this thillana captures his playful charm, grace, and divine beauty. Composition of the legendary composer, Shri Lalgudi Jayaraman in Madhuvanthi ragam set to Adi thalam.</p>
               </div>
             </li>
             <li _ngcontent-ng-c2308020386="">
@@ -1067,9 +1083,9 @@
                 src="./image10.jpg" alt="Anannya Karthikeyan" class="dancer-photo"></div>
             <div _ngcontent-ng-c2308020386="" class="profile-text">
               <h3 _ngcontent-ng-c2308020386="" class="profile-name">Anannya Karthikeyan</h3>
-              <p _ngcontent-ng-c2308020386=""> Anannya is a sophomore at Emerald High School and has been learning Bharatanatyam for the past 8 years. She started her tutelage under the guidance of Guru Smt. Sweta Dixit and currently she has been learning under the able guidance of Guru Smt. Meenakshi Ganesan for the past 2 years. She is also learning Carnatic music for the past 5 years. </p>
-              <p _ngcontent-ng-c2308020386=""> Anannya has been a dance lover since the age of 5. In class, she is a quiet observer, enthusiastic learner, and has been an accountable teaching assistant to younger kids in her dance school. Apart from dance, Anannya loves singing, reading books, and spending time with family. </p>
-              <p _ngcontent-ng-c2308020386=""> She has participated and won accolades in competitions such as OSAAT, Papanasam Sivan, Art of India, and Veenadhari. Anannya is currently doing her diploma in Bharatanatyam under Aria University to deepen her knowledge of dance. She also completed the Junior Certification course in Bharatanatyam in SAMPADA. </p>
+              <p _ngcontent-ng-c2308020386=""> Anannya is a sophomore at Emerald High School and has been learning Bharatanatyam for the past eight years. Her journey in dance began at the age of seven, nurtured initially under the guidance of her first guru, Smt. Sweta Dixit. For the past two years, she has continued her training under the able guidance of her guru, Smt. Meenakshi Ganesan. Alongside Bharatanatyam, Anannya has been learning Carnatic music for the past five years. She is currently pursuing her Diploma in Bharatanatyam from Aria University, further deepening her knowledge and understanding of the art form. She has also successfully completed the Junior Certification Course in Bharatanatyam from SAMPADA. </p>
+              <p _ngcontent-ng-c2308020386=""> Anannya has participated in several prestigious dance competitions, including OSAAT, Papanasam Sivan, SciArtsRUs, Art of India, and Veenadhari, where she has received accolades for her performances. Known for being a quiet observer and an enthusiastic learner, Anannya is also a responsible and dedicated Teaching Assistant, supporting and guiding younger students at her dance school. </p>
+              <p _ngcontent-ng-c2308020386=""> Beyond dance, Anannya enjoys singing, reading books, and spending quality time with her family. Her love for the performing arts and her dedication to continuous learning have been an integral part of her journey, leading her to this special milestone—her Bharatanatyam Arangetram. </p>
             </div>
           </article>
         </section>
@@ -1086,7 +1102,7 @@
               <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
                   src="./image2.png" alt="Guru Meenakshi Ganesan" class="orch-photo"></div>
               <div _ngcontent-ng-c2308020386="" class="orch-bio">
-                <div _ngcontent-ng-c2308020386="" class="orch-role">Guru Meenakshi Ganesan</div>
+                <div _ngcontent-ng-c2308020386="" class="orch-role"> Vocal Support & Nattuvangam</div>
                 <h3 _ngcontent-ng-c2308020386="" class="orch-name">Guru Meenakshi Ganesan</h3>
                 <p _ngcontent-ng-c2308020386=""> Guru Meenakshi Ganesan is the Founder and Artistic Director of the Kalaanjali School of Dance (Kalaanjali Dance Company), established in 2003. She began her Bharatanatyam training at the age of six under her aunt <strong _ngcontent-ng-c2308020386="">Guru Prema Nagasundaram</strong> and <strong _ngcontent-ng-c2308020386="">Guru Padmini Radhakrishnan</strong>, and holds the <strong _ngcontent-ng-c2308020386="">Visharad degree</strong> and a <strong _ngcontent-ng-c2308020386="">Master’s degree in Bharatanatyam</strong>. She is a recent graduate from her <strong _ngcontent-ng-c2308020386="">second Master’s degree in Dance from Aria University</strong>, and is pursuing her PhD in Dance from the same, continuing her scholarly engagement with the art form. </p>
                 <p _ngcontent-ng-c2308020386=""> With <strong _ngcontent-ng-c2308020386="">over 3,000 performances</strong> to her credit across <strong _ngcontent-ng-c2308020386="">India, the UK, Canada, and the United States</strong>, Guru Meenakshi is an accomplished performer and choreographer. Her contributions to Indian classical dance have earned her several honors, including the prestigious title <strong _ngcontent-ng-c2308020386="">“Nritya Mayuri” (Dancing Peacock)</strong> conferred by the <strong _ngcontent-ng-c2308020386="">Ministry of Education, Government of India</strong>. She has collaborated extensively with eminent musicians and dancers and has led numerous thematic and ensemble productions across the U.S. </p>
@@ -1094,17 +1110,7 @@
                 <p _ngcontent-ng-c2308020386=""> She was recognized as a <strong _ngcontent-ng-c2308020386="">Master Artist</strong> by the <strong _ngcontent-ng-c2308020386="">Wisconsin Arts Board</strong> from 2015 to 2021, later serving on its board in 2022. She is the <strong _ngcontent-ng-c2308020386="">first recipient of the Tiruvarur Nagarajan Award (2024)</strong> from Chennai, Silicon Andhra award May 2026, and continues to contribute to the growth of Bharatanatyam through teaching, choreography, and arts advocacy. Based in <strong _ngcontent-ng-c2308020386="">Dublin, California</strong>, Guru Meenakshi remains deeply committed to nurturing the next generation of dancers. </p>
               </div>
             </article>
-            <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
-              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
-                  src="./image7.jpg" alt="Srinath Bala" class="orch-photo"></div>
-              <div _ngcontent-ng-c2308020386="" class="orch-bio">
-                <div _ngcontent-ng-c2308020386="" class="orch-role">Mridangam</div>
-                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Srinath Bala</h3>
-                <p _ngcontent-ng-c2308020386=""> Srinath Bala is a versatile percussionist with varied styles blended rhythmically into one. Having been initiated by Late Sri. Krishnan (Palghat Sri Mani Iyer style), he received intensive guidance under Sri. R. Ramesh (Karaikudi Mani Style) in Chennai, and later under Maestro Umayalpuram K. Sivaraman. To his credit, he has uniquely combined the kannakku and naadam aspects from various gurus. </p>
-                <p _ngcontent-ng-c2308020386=""> He has accompanied the topmost senior artists performing in India, Canada, Zambia, Singapore, and the US, and has also played in Jugalbandis and TalaVadya Concerts to showcase the solo percussion aspects. He has various recordings and has given lecture-demonstrations on <strong _ngcontent-ng-c2308020386="">LAYAM</strong>. In 2006, he presented a TalaVadya concert titled <strong _ngcontent-ng-c2308020386="">“Music Through Membranes”</strong>. </p>
-                <p _ngcontent-ng-c2308020386=""> Being a recipient of the <strong _ngcontent-ng-c2308020386="">PG Arts Award</strong>, <strong _ngcontent-ng-c2308020386="">MSAC Artist Awards</strong>, and titles <strong _ngcontent-ng-c2308020386="">“Kala Shreshtha”</strong> and <strong _ngcontent-ng-c2308020386="">“Paramparaa Rakshak”</strong>, he has over 30 years of concert experience and is an extremely well-sought-after artist for music and dance concerts. He has been teaching students for many years and has successfully trained many students, who currently play Mridangam, Ghatam, and Kanjira actively in various music circles. </p>
-              </div>
-            </article>
+            
             <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
               <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
                   src="./image8.jpg" alt="Surya Ganesan" class="orch-photo"></div>
@@ -1128,6 +1134,17 @@
                   Aradhana. Surya is a recent graduate of <strong _ngcontent-ng-c2308020386="">UC Davis</strong> and has
                   been the Vice President and Road Captain of the UC Davis Cycling team and the treasurer of the UC
                   Davis carnatic music team Dhvani. </p>
+              </div>
+            </article>
+            <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
+              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
+                  src="./image7.jpg" alt="Srinath Bala" class="orch-photo"></div>
+              <div _ngcontent-ng-c2308020386="" class="orch-bio">
+                <div _ngcontent-ng-c2308020386="" class="orch-role">Mridangam</div>
+                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Srinath Bala</h3>
+                <p _ngcontent-ng-c2308020386=""> Srinath Bala is a versatile percussionist with varied styles blended rhythmically into one. Having been initiated by Late Sri. Krishnan (Palghat Sri Mani Iyer style), he received intensive guidance under Sri. R. Ramesh (Karaikudi Mani Style) in Chennai, and later under Maestro Umayalpuram K. Sivaraman. To his credit, he has uniquely combined the kannakku and naadam aspects from various gurus. </p>
+                <p _ngcontent-ng-c2308020386=""> He has accompanied the topmost senior artists performing in India, Canada, Zambia, Singapore, and the US, and has also played in Jugalbandis and TalaVadya Concerts to showcase the solo percussion aspects. He has various recordings and has given lecture-demonstrations on <strong _ngcontent-ng-c2308020386="">LAYAM</strong>. In 2006, he presented a TalaVadya concert titled <strong _ngcontent-ng-c2308020386="">“Music Through Membranes”</strong>. </p>
+                <p _ngcontent-ng-c2308020386=""> Being a recipient of the <strong _ngcontent-ng-c2308020386="">PG Arts Award</strong>, <strong _ngcontent-ng-c2308020386="">MSAC Artist Awards</strong>, and titles <strong _ngcontent-ng-c2308020386="">“Kala Shreshtha”</strong> and <strong _ngcontent-ng-c2308020386="">“Paramparaa Rakshak”</strong>, he has over 30 years of concert experience and is an extremely well-sought-after artist for music and dance concerts. He has been teaching students for many years and has successfully trained many students, who currently play Mridangam, Ghatam, and Kanjira actively in various music circles. </p>
               </div>
             </article>
             <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
