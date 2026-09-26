@@ -1,0 +1,1224 @@
+<html lang="en">
+
+<head>
+  <script type="module" src="/@vite/client"></script>
+
+  <meta charset="utf-8">
+  <title>Anannya Karthikeyan Arangetram</title>
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="drive-photos/title.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .brochure-page[_ngcontent-ng-c2308020386] {
+      --invitation-bg: #cfe3ee;
+      --invitation-bg-soft: #e4cde1;
+      --invitation-panel: rgba(255, 255, 255, 0.16);
+      --invitation-panel-strong: rgba(255, 255, 255, 0.26);
+      --ink-strong: #2a3d51;
+      --ink-muted: #4b647e;
+      --rose: #ddb7cf;
+      --rose-deep: #a26789;
+      --gold: #c9964c;
+      --gold-deep: #9b6d32;
+      --sage: #5d7f82;
+      --line: rgba(72, 74, 110, 0.18);
+      --line-bright: rgba(153, 110, 49, 0.38);
+      max-width: 1080px;
+      margin: 1.2rem auto 2rem;
+      padding: 0 1rem 1.2rem;
+      display: grid;
+      gap: 1.2rem;
+      color: var(--ink-strong);
+      font-family:
+        "Lato",
+        "Segoe UI",
+        sans-serif;
+      background: linear-gradient(180deg, #dfc5dd 0%, #cfe2ef 100%);
+      overflow-x: hidden;
+    }
+
+    .cover-page[_ngcontent-ng-c2308020386] {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+      border: 1px solid rgba(108, 127, 171, 0.1);
+      background:
+        linear-gradient(180deg,
+          #cfe5f2 0%,
+          #c4dfe9 42%,
+          #dfeef4 100%);
+      min-height: 400px;
+      padding: 2.5rem 2rem 3rem;
+      display: grid;
+      grid-template-columns: minmax(170px, 0.8fr) minmax(420px, 1.7fr);
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+      box-shadow: 0 18px 30px rgba(81, 115, 147, 0.08);
+    }
+
+    .cover-decor[_ngcontent-ng-c2308020386] {
+      position: relative;
+      justify-self: center;
+      width: min(100%, 260px);
+      height: auto;
+      max-height: 78%;
+      object-fit: contain;
+      object-position: center;
+      opacity: 0.9;
+      pointer-events: none;
+      filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.2));
+      z-index: 2;
+      margin-left: 0.5rem;
+    }
+
+    .cover-decor-left[_ngcontent-ng-c2308020386] {
+      left: auto;
+    }
+
+    .temple-arch[_ngcontent-ng-c2308020386] {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 260px;
+      height: 160px;
+      background:
+        radial-gradient(ellipse at 50% 0%,
+          rgba(232, 101, 10, 0.18) 0%,
+          transparent 70%);
+      pointer-events: none;
+    }
+
+    .lamp[_ngcontent-ng-c2308020386] {
+      position: absolute;
+      bottom: 1.5rem;
+      width: 12px;
+      height: 28px;
+      background:
+        linear-gradient(180deg,
+          var(--gold),
+          var(--copper));
+      border-radius: 3px 3px 2px 2px;
+      pointer-events: none;
+    }
+
+    .lamp[_ngcontent-ng-c2308020386]::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 12px;
+      background:
+        radial-gradient(ellipse at 50% 80%,
+          #ffe066 30%,
+          rgba(255, 180, 40, 0.3) 80%,
+          transparent 100%);
+      border-radius: 50%;
+    }
+
+    .lamp-left[_ngcontent-ng-c2308020386] {
+      left: 2.5rem;
+    }
+
+    .lamp-right[_ngcontent-ng-c2308020386] {
+      right: 2.5rem;
+    }
+
+    .cover-content[_ngcontent-ng-c2308020386] {
+      position: relative;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sloka[_ngcontent-ng-c2308020386] {
+      font-size: 2.6rem;
+      color: var(--gold-deep);
+      letter-spacing: 0.06em;
+      margin: 0;
+      line-height: 1.2;
+      font-weight: 400;
+      font-family: "Tangerine", "Georgia", serif;
+    }
+
+    .presents-line[_ngcontent-ng-c2308020386] {
+      margin: 0;
+      color: var(--ink-muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: "Lato", sans-serif;
+    }
+
+    .cover-page[_ngcontent-ng-c2308020386] h1[_ngcontent-ng-c2308020386] {
+      margin: 0.6rem 0 0.4rem;
+      font-family:
+        "Great Vibes",
+        "Tangerine",
+        serif;
+      color: #5b7d97;
+      line-height: 1.08;
+      font-size: clamp(2rem, 3vw + 1rem, 4rem);
+      letter-spacing: 0.02em;
+      font-weight: 400;
+    }
+
+    .dancer-name[_ngcontent-ng-c2308020386] {
+      margin: 0;
+      font-family:
+        "Satisfy",
+        "Segoe Print",
+        cursive;
+      font-size: clamp(1.3rem, 2vw + 0.8rem, 2.5rem);
+      color: #6f6a88;
+      letter-spacing: 0.04em;
+    }
+
+    .cover-divider[_ngcontent-ng-c2308020386] {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      width: 100%;
+      max-width: 380px;
+      margin: 0.2rem 0;
+      color: var(--gold);
+      font-size: 1.4rem;
+    }
+
+    .cover-divider[_ngcontent-ng-c2308020386]::before,
+    .cover-divider[_ngcontent-ng-c2308020386]::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background:
+        linear-gradient(90deg,
+          transparent,
+          var(--gold),
+          transparent);
+    }
+
+    .cover-meta[_ngcontent-ng-c2308020386] {
+      margin: 0;
+      color: var(--cream-soft);
+      font-size: 0.92rem;
+      letter-spacing: 0.05em;
+    }
+
+    .cover-footer-strip[_ngcontent-ng-c2308020386] {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background:
+        repeating-linear-gradient(90deg,
+          var(--saffron) 0px,
+          var(--saffron) 8px,
+          var(--gold) 8px,
+          var(--gold) 16px);
+    }
+
+    .section-card[_ngcontent-ng-c2308020386] {
+      border-radius: 12px;
+      border: 1px solid rgba(125, 128, 171, 0.18);
+      border-top: 3px solid var(--gold);
+      background:
+        linear-gradient(180deg,
+          rgba(255, 255, 255, 0.22),
+          rgba(255, 255, 255, 0.08));
+      padding: 1.4rem 1.2rem 1.2rem;
+      box-shadow: 0 10px 24px rgba(92, 117, 141, 0.05);
+    }
+
+    .section-header[_ngcontent-ng-c2308020386] {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .section-card[_ngcontent-ng-c2308020386] h2[_ngcontent-ng-c2308020386] {
+      margin: 0;
+      font-family:
+        "Great Vibes",
+        "Tangerine",
+        serif;
+      color: var(--rose-deep);
+      font-size: 2.2rem;
+      letter-spacing: 0.02em;
+      font-weight: 400;
+    }
+
+    .kolam-left[_ngcontent-ng-c2308020386],
+    .kolam-right[_ngcontent-ng-c2308020386] {
+      color: var(--saffron);
+      font-size: 1rem;
+      opacity: 0.7;
+    }
+
+    .section-card[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386] {
+      margin: 0.6rem 0;
+      line-height: 1.65;
+      color: var(--ink-strong);
+    }
+
+    .welcome-body[_ngcontent-ng-c2308020386] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .welcome-photo[_ngcontent-ng-c2308020386] {
+      width: min(100%, 920px);
+      height: auto;
+      max-height: 540px;
+      object-fit: contain;
+      object-position: center center;
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      display: block;
+      background: #d9d9d9;
+      margin: 0 auto;
+      box-shadow: 0 10px 28px rgba(60, 46, 32, 0.12);
+    }
+
+    .welcome-text[_ngcontent-ng-c2308020386] {
+      width: 100%;
+      max-width: 1080px;
+      flex: 1;
+    }
+
+    .welcome-text[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386] {
+      margin: 0 0 0.75rem;
+      line-height: 1.75;
+      color: var(--ink-strong);
+      font-size: clamp(0.9rem, 0.85rem + 0.22vw, 1.08rem);
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .welcome-text[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386]:last-child {
+      margin-bottom: 0;
+    }
+
+    .sloka-small[_ngcontent-ng-c2308020386] {
+      font-size: 1rem;
+      color: var(--gold);
+      margin: 0.2rem 0 0;
+      font-style: italic;
+      letter-spacing: 0.04em;
+    }
+
+    .sloka-trans[_ngcontent-ng-c2308020386] {
+      font-size: 0.82rem;
+      color: var(--cream-soft);
+      margin: 0 0 0.9rem;
+      font-style: italic;
+    }
+
+    .sign-off[_ngcontent-ng-c2308020386] {
+      text-align: right;
+      font-style: italic;
+      color: var(--gold);
+      margin-top: 1rem !important;
+    }
+
+    .divider[_ngcontent-ng-c2308020386] {
+      height: 1px;
+      background:
+        linear-gradient(90deg,
+          transparent,
+          var(--saffron),
+          transparent);
+      margin-top: 1.2rem;
+    }
+
+    .program-list[_ngcontent-ng-c2308020386] {
+      list-style: none;
+      margin: 0.4rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .program-list[_ngcontent-ng-c2308020386] li[_ngcontent-ng-c2308020386] {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid rgba(107, 117, 155, 0.18);
+      border-left: 4px solid var(--gold);
+      border-radius: 10px;
+      padding: 0.85rem 0.9rem;
+      background: rgba(255, 255, 255, 0.32);
+      transition: border-color 0.2s;
+      color: var(--ink-strong);
+    }
+
+    .program-list[_ngcontent-ng-c2308020386] li[_ngcontent-ng-c2308020386]:hover {
+      border-left-color: var(--rose-deep);
+    }
+
+    .program-list[_ngcontent-ng-c2308020386] li.program-highlight[_ngcontent-ng-c2308020386] {
+      border-left-color: var(--rose-deep);
+      background: rgba(255, 255, 255, 0.42);
+    }
+
+    .program-number[_ngcontent-ng-c2308020386] {
+      font-family: "Cinzel Decorative", serif;
+      color: var(--gold-deep);
+      font-size: 0.95rem;
+      opacity: 0.9;
+      white-space: nowrap;
+    }
+
+    .program-body[_ngcontent-ng-c2308020386] {
+      flex: 1;
+    }
+
+    .program-list[_ngcontent-ng-c2308020386] h3[_ngcontent-ng-c2308020386] {
+      margin: 0;
+      font-size: 1.05rem;
+      color: var(--ink-strong);
+      font-family:
+        "Cinzel Decorative",
+        "Times New Roman",
+        serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .program-meta[_ngcontent-ng-c2308020386] {
+      margin: 0.22rem 0 0 !important;
+      font-size: 0.8rem;
+      color: var(--ink-muted) !important;
+      letter-spacing: 0.03em;
+    }
+
+    .program-desc[_ngcontent-ng-c2308020386] {
+      margin: 0.4rem 0 0 !important;
+      font-size: 0.9rem;
+      color: var(--ink-strong) !important;
+      line-height: 1.6;
+    }
+
+    .centerpiece-badge[_ngcontent-ng-c2308020386] {
+      font-family: "Lato", sans-serif;
+      font-size: 0.65rem;
+      background: var(--saffron);
+      color: #fff;
+      border-radius: 99px;
+      padding: 0.1rem 0.5rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+
+    .profile-full[_ngcontent-ng-c2308020386] {
+      display: flex;
+      gap: 1.4rem;
+      align-items: flex-start;
+    }
+
+    .profile-full[_ngcontent-ng-c2308020386]+.profile-full[_ngcontent-ng-c2308020386] {
+      margin-top: 1.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .photo-frame[_ngcontent-ng-c2308020386] {
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .dancer-photo[_ngcontent-ng-c2308020386] {
+      display: block;
+      width: 180px;
+      height: 240px;
+      object-fit: cover;
+      object-position: center top;
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+    }
+
+    .profile-name[_ngcontent-ng-c2308020386] {
+      margin: 0 0 0.6rem;
+      font-family: "Cinzel Decorative", serif;
+      color: var(--saffron-soft);
+      font-size: 1.3rem;
+    }
+
+    .profile-text[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386] {
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+
+    .orchestra-note[_ngcontent-ng-c2308020386] {
+      font-style: italic;
+      color: var(--ink-muted) !important;
+      margin-bottom: 1rem !important;
+    }
+
+    .orchestra-grid[_ngcontent-ng-c2308020386] {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.9rem;
+    }
+
+    .orch-card[_ngcontent-ng-c2308020386] {
+      border: 1px solid rgba(111, 125, 161, 0.18);
+      border-top: 2px solid var(--gold);
+      border-radius: 10px;
+      padding: 0.9rem;
+      background: rgba(255, 255, 255, 0.28);
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      color: var(--ink-strong);
+    }
+
+    .orch-card-featured[_ngcontent-ng-c2308020386] {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1.4rem;
+      border-top-color: var(--gold);
+      background: rgba(255, 255, 255, 0.34);
+    }
+
+    .orch-photo-frame[_ngcontent-ng-c2308020386] {
+      flex-shrink: 0;
+    }
+
+    .orch-photo[_ngcontent-ng-c2308020386] {
+      display: block;
+      width: 170px;
+      height: 220px;
+      object-fit: cover;
+      object-position: center top;
+      border: 2px solid var(--gold);
+      border-radius: 4px;
+    }
+
+    .orch-card-wide[_ngcontent-ng-c2308020386] {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1.4rem;
+    }
+
+    .orch-card-img[_ngcontent-ng-c2308020386] {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 0.2rem;
+    }
+
+    .orch-photo-placeholder[_ngcontent-ng-c2308020386] {
+      width: 100%;
+      height: 110px;
+      border: 1px dashed rgba(137, 117, 163, 0.3);
+      border-radius: 4px;
+      display: grid;
+      place-items: center;
+      color: var(--gold-deep);
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .orch-card-featured[_ngcontent-ng-c2308020386] .orch-photo-placeholder[_ngcontent-ng-c2308020386] {
+      width: 170px;
+      height: 220px;
+    }
+
+    .orch-bio[_ngcontent-ng-c2308020386] {
+      flex: 1;
+      min-width: 0;
+      border-left: 2px solid var(--gold);
+      padding-left: 0.9rem;
+    }
+
+    .orch-role[_ngcontent-ng-c2308020386] {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--rose-deep);
+      font-weight: 700;
+    }
+
+    .orch-name[_ngcontent-ng-c2308020386] {
+      margin: 0.2rem 0 0.4rem;
+      font-size: 1rem;
+      color: var(--ink-strong);
+      font-family: "Cinzel Decorative", serif;
+      font-weight: 600;
+    }
+
+    .orch-card[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386] {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      color: var(--ink-muted);
+      margin: 0 0 0.8rem 0;
+      padding: 0.6rem 0 0 0;
+      opacity: 0.95;
+    }
+
+    .orch-card[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386]:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .orch-credentials[_ngcontent-ng-c2308020386] {
+      list-style: none;
+      margin: 0.75rem 0 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+      gap: 0.3rem 1.2rem;
+      border-top: 1px solid rgba(110, 122, 165, 0.18);
+      padding-top: 0.65rem;
+    }
+
+    .orch-credentials[_ngcontent-ng-c2308020386] li[_ngcontent-ng-c2308020386] {
+      font-size: 0.8rem;
+      color: var(--ink-muted);
+      line-height: 1.5;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .orch-credentials[_ngcontent-ng-c2308020386] li[_ngcontent-ng-c2308020386]::before {
+      content: "\2726";
+      position: absolute;
+      left: 0;
+      color: var(--gold-deep);
+      font-size: 0.55rem;
+      top: 0.28rem;
+    }
+
+    .guests-row[_ngcontent-ng-c2308020386] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1.5rem 0 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .guest-card[_ngcontent-ng-c2308020386] {
+      text-align: center;
+      flex: 1;
+      min-width: 180px;
+      max-width: 280px;
+      background:
+        linear-gradient(135deg,
+          rgba(240, 208, 96, 0.06),
+          rgba(192, 128, 24, 0.12));
+      border: 1px solid rgba(240, 208, 96, 0.25);
+      border-radius: 6px;
+      padding: 1.4rem 1.6rem;
+    }
+
+    .guest-label[_ngcontent-ng-c2308020386] {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--saffron-soft);
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .guest-name[_ngcontent-ng-c2308020386] {
+      font-family: "Cinzel Decorative", serif;
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      line-height: 1.4;
+    }
+
+    .guest-divider[_ngcontent-ng-c2308020386] {
+      font-size: 1.4rem;
+      color: var(--copper);
+      opacity: 0.5;
+    }
+
+    @media (max-width: 760px) {
+      .guest-divider[_ngcontent-ng-c2308020386] {
+        transform: rotate(90deg);
+      }
+    }
+
+    .thankyou-card[_ngcontent-ng-c2308020386] {
+      border-top-color: var(--gold);
+      text-align: center;
+      background:
+        linear-gradient(180deg,
+          rgba(255, 255, 255, 0.18),
+          rgba(234, 214, 221, 0.24));
+    }
+
+    .thankyou-card[_ngcontent-ng-c2308020386] .section-header[_ngcontent-ng-c2308020386] {
+      justify-content: center;
+    }
+
+    .thankyou-card[_ngcontent-ng-c2308020386] p[_ngcontent-ng-c2308020386] {
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .closing-block[_ngcontent-ng-c2308020386] {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9rem;
+      padding-top: 1rem;
+    }
+
+    .qr-page-link[_ngcontent-ng-c2308020386] {
+      display: inline-block;
+      color: var(--cream);
+      text-decoration: none;
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      padding: 0.45rem 1.1rem;
+      font-size: 0.88rem;
+      letter-spacing: 0.05em;
+      transition: background 0.2s;
+    }
+
+    .qr-page-link[_ngcontent-ng-c2308020386]:hover {
+      background: rgba(212, 164, 55, 0.18);
+    }
+
+    @media (max-width: 760px) {
+      .brochure-page[_ngcontent-ng-c2308020386] {
+        padding: 0 0.5rem 1rem;
+        margin: 0 auto;
+      }
+
+      .cover-page[_ngcontent-ng-c2308020386] {
+        padding: 1.5rem 1rem 0;
+        min-height: 600px;
+        justify-content: flex-start;
+      }
+
+      .cover-decor[_ngcontent-ng-c2308020386] {
+        width: clamp(120px, 38vw, 220px);
+        height: clamp(220px, 52vw, 300px);
+        bottom: 10px;
+        object-fit: contain;
+        object-position: center bottom;
+      }
+
+      .cover-decor-left[_ngcontent-ng-c2308020386] {
+        left: 0;
+      }
+
+      .cover-decor-right[_ngcontent-ng-c2308020386] {
+        right: 0;
+      }
+
+      .cover-content[_ngcontent-ng-c2308020386] {
+        padding-bottom: calc(34% + 24px);
+      }
+
+      .cover-page[_ngcontent-ng-c2308020386]::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+        background:
+          linear-gradient(to top,
+            rgba(15, 4, 1, 0.75) 0%,
+            transparent 100%);
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      .sloka[_ngcontent-ng-c2308020386] {
+        font-size: 1.2rem;
+      }
+
+      .cover-page[_ngcontent-ng-c2308020386] h1[_ngcontent-ng-c2308020386] {
+        font-size: clamp(1.4rem, 6.5vw, 2rem);
+      }
+
+      .dancer-name[_ngcontent-ng-c2308020386] {
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+      }
+
+      .lamp[_ngcontent-ng-c2308020386] {
+        display: none;
+      }
+
+      .section-header[_ngcontent-ng-c2308020386] {
+        justify-content: center;
+      }
+
+      .welcome-photo[_ngcontent-ng-c2308020386] {
+        height: 240px;
+      }
+
+      .profile-full[_ngcontent-ng-c2308020386] {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo-frame[_ngcontent-ng-c2308020386] {
+        width: 100%;
+      }
+
+      .dancer-photo[_ngcontent-ng-c2308020386] {
+        width: 100%;
+        height: 260px;
+      }
+
+      .program-number[_ngcontent-ng-c2308020386] {
+        font-size: 0.85rem;
+      }
+
+      .orchestra-grid[_ngcontent-ng-c2308020386] {
+        grid-template-columns: 1fr;
+      }
+
+      .orch-card-featured[_ngcontent-ng-c2308020386],
+      .orch-card-wide[_ngcontent-ng-c2308020386] {
+        flex-direction: column;
+      }
+
+      .orch-card-featured[_ngcontent-ng-c2308020386] .orch-photo-placeholder[_ngcontent-ng-c2308020386],
+      .orch-card-featured[_ngcontent-ng-c2308020386] .orch-photo[_ngcontent-ng-c2308020386],
+      .orch-card-wide[_ngcontent-ng-c2308020386] .orch-photo[_ngcontent-ng-c2308020386] {
+        width: 100%;
+        height: 200px;
+      }
+
+      .orch-credentials[_ngcontent-ng-c2308020386] {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .print-toolbar[_ngcontent-ng-c2308020386] {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5rem 1rem;
+      background: rgba(26, 10, 6, 0.92);
+      border-bottom: 2px solid var(--saffron);
+      backdrop-filter: blur(6px);
+    }
+
+    .print-fab[_ngcontent-ng-c2308020386] {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--gold-light);
+      font-family: inherit;
+      font-size: 0.88rem;
+      padding: 0.42rem 1rem;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      transition: background 0.2s;
+    }
+
+    .print-fab[_ngcontent-ng-c2308020386]:hover {
+      background: rgba(212, 164, 55, 0.18);
+    }
+
+    @media print {
+      *[_ngcontent-ng-c2308020386] {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      .no-print[_ngcontent-ng-c2308020386] {
+        display: none !important;
+      }
+
+      .brochure-page[_ngcontent-ng-c2308020386] {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+      }
+
+      .cover-page[_ngcontent-ng-c2308020386] {
+        page-break-after: always;
+        break-after: page;
+        min-height: 100vh;
+        padding: 3rem 2rem 4rem;
+      }
+
+      .section-card[_ngcontent-ng-c2308020386] {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        padding: 1.2rem 1.5rem;
+      }
+
+      .orch-card[_ngcontent-ng-c2308020386] {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .section-card[aria-label=Orchestra][_ngcontent-ng-c2308020386] {
+        page-break-before: always;
+        break-before: page;
+      }
+
+      .profile-card[_ngcontent-ng-c2308020386] {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .cover-decor[_ngcontent-ng-c2308020386] {
+        max-height: 45vh;
+        opacity: 0.85;
+      }
+    }
+
+    /*# sourceMappingURL=/brochure.component.css.map */
+  </style>
+</head>
+
+<body>
+  <app-root ng-version="19.2.25"><router-outlet></router-outlet><app-brochure _nghost-ng-c2308020386="">
+      <main _ngcontent-ng-c2308020386="" class="brochure-page">
+        <section _ngcontent-ng-c2308020386="" aria-label="Cover page" class="cover-page">
+          <div _ngcontent-ng-c2308020386="" aria-hidden="true" class="temple-arch"></div>
+          <img _ngcontent-ng-c2308020386="" src="./image11.jpeg" alt="" aria-hidden="true" class="cover-decor cover-decor-left">
+          <div _ngcontent-ng-c2308020386="" class="cover-content">
+            <p _ngcontent-ng-c2308020386="" lang="sa" class="sloka">Om Sri Gurubhyoh Namaha</p>
+            <p _ngcontent-ng-c2308020386="" class="presents-line">Kalaanjali Dance Company</p>
+            <p _ngcontent-ng-c2308020386="" class="presents-line">joyfully presents the</p>
+            <h1 _ngcontent-ng-c2308020386="">Bharatanatyam Arangetram</h1>
+            <p _ngcontent-ng-c2308020386="" class="dancer-name">Anannya Karthikeyan</p>
+            <div _ngcontent-ng-c2308020386="" aria-hidden="true" class="cover-divider"><span
+                _ngcontent-ng-c2308020386="" aria-hidden="true" class="lotus">❁</span></div>
+            <p _ngcontent-ng-c2308020386="" class="cover-meta">Sunday, September 27, 2026</p>
+            <p _ngcontent-ng-c2308020386="" class="cover-meta">3:00 PM - 6:00 PM</p>
+            <p _ngcontent-ng-c2308020386="" class="cover-meta">Dublin High School Performing Arts Center, Dublin, California</p>
+          </div>
+          <div _ngcontent-ng-c2308020386="" aria-hidden="true" class="cover-footer-strip"></div>
+        </section>
+        <section _ngcontent-ng-c2308020386="" aria-label="Welcome note" class="section-card">
+          <div _ngcontent-ng-c2308020386="" class="section-header"><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-left">🌸</span>
+            <h2 _ngcontent-ng-c2308020386="">Welcome</h2><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-right">🌸</span>
+          </div>
+          <div _ngcontent-ng-c2308020386="" class="welcome-body"><img _ngcontent-ng-c2308020386=""
+              src="./image12.jpeg" alt="Bharatanatyam dancers in classical pose"
+              class="welcome-photo">
+            <div _ngcontent-ng-c2308020386="" class="welcome-text">
+              <p _ngcontent-ng-c2308020386=""> An Arangetram is the first solo recital of a student of Bharatanatyam and
+                marks the culmination of many years of dedicated training. The word <em
+                  _ngcontent-ng-c2308020386="">Arangetram</em> is derived from two Tamil words — <em
+                  _ngcontent-ng-c2308020386="">arangam</em> (stage) and <em _ngcontent-ng-c2308020386="">etram</em> (to
+                ascend) — meaning “to ascend the stage.” </p>
+              <p _ngcontent-ng-c2308020386=""> Bharatanatyam is one of the oldest Indian classical dance traditions, with
+                roots tracing back to the 3rd century B.C. The term <em _ngcontent-ng-c2308020386="">Bharatanatyam</em>
+                is a composite of <em _ngcontent-ng-c2308020386="">bharata</em> and <em
+                  _ngcontent-ng-c2308020386="">natyam</em>. <em _ngcontent-ng-c2308020386="">Bharata</em> is formed from
+                <em _ngcontent-ng-c2308020386="">bha</em> (bhava — emotion), <em _ngcontent-ng-c2308020386="">ra</em>
+                (raga — melody), and <em _ngcontent-ng-c2308020386="">ta</em> (tala — rhythm), while <em
+                  _ngcontent-ng-c2308020386="">natyam</em> means dance in Sanskrit. </p>
+              <p _ngcontent-ng-c2308020386=""> Originally performed in the temples of Tamil Nadu in South India,
+                Bharatanatyam integrates three essential elements: <em _ngcontent-ng-c2308020386="">nritta</em>, the
+                pure dance characterized by rhythmic footwork and intricate movements; <em
+                  _ngcontent-ng-c2308020386="">nritya</em>, which combines rhythm with expressive storytelling; and <em
+                  _ngcontent-ng-c2308020386="">natya</em>, the dramatic portrayal of narratives through expressive
+                gestures, graceful movement, and nuanced facial expressions. </p>
+              <p _ngcontent-ng-c2308020386=""> An Arangetram does not signify the completion of training or the end of a
+                dancer’s journey. Rather, it marks the student’s readiness to progress to deeper exploration and artistic
+                maturity within this classical art form. It is the blossoming of the dancer into a confident and
+                accomplished performer. Anannya participates in this centuries-old tradition of the Bharatanatyam
+                Arangetram. </p>
+              <p _ngcontent-ng-c2308020386=""> We thank you for being a part of this auspicious occasion and warmly
+                invite you to enjoy the presentation. </p>
+            </div>
+          </div>
+          <div _ngcontent-ng-c2308020386="" class="divider"></div>
+        </section>
+        <section _ngcontent-ng-c2308020386="" aria-label="Program lineup" class="section-card">
+          <div _ngcontent-ng-c2308020386="" class="section-header"><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-left">🌸</span>
+            <h2 _ngcontent-ng-c2308020386="">Program</h2><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-right">🌸</span>
+          </div>
+          <ul _ngcontent-ng-c2308020386="" class="program-list">
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">1
+                    &nbsp;·&nbsp;</span>THODAYA MANGALAM</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A traditional invocation dance composition in Ragamalikai set to a garland of rhythms, thalamalika in praise of Lord Rama and Lord Krishna.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">2
+                    &nbsp;·&nbsp;</span>KANCHA DALAYA DAKSHI</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A beautiful devotional composition describing the radiant beauty and compassionate grace of the divine Mother in Kamalamanohari Ragam set to Adhi thalam.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">3
+                    &nbsp;·&nbsp;</span>VARNAM</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A traditional varnam depicting a love-lorn nayika longing for Lord Muruga. Her sakhi approaches the Lord as her messenger, appealing to his compassion and urging him to come to the maiden before her unbearable longing breaks her heart. The sakhi describes the nayika’s intense suffering and pleads with Muruga to hasten to her. A composition of Shri Papanasam Sivan in Sriranjani ragam set to Aadi thalam.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">4
+                    &nbsp;·&nbsp;</span>AADI KONDAAR</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A vibrant ode to Lord Nataraja, celebrating his majestic grace and bliss of Shiva’s cosmic dance through dynamic nritta and expressive abhinaya. A composition of Muthu Thandavar in Ragam: Mayamalavagowla set to Adi Thalam.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">5
+                    &nbsp;·&nbsp;</span>CHALIYE KUNJANAMO</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A graceful portrayal of Radha and Krishna, this composition captures the playful charm and tender emotions of their divine love. Through expressive abhinaya and lyrical movement, the dancer brings alive the beauty of Vrindavan and the enchanting presence of Krishna. A composition of Swati Tirunal in Ragam: Vrindavani set to Adi Thalam.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">6
+                    &nbsp;·&nbsp;</span>SNAKE DANCE</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A captivating Bharatanatyam composition inspired by the graceful, sinuous movements of the serpent. Through rhythmic footwork, expressive gestures, and fluid movements, the dancer brings alive the mystery, energy, and hypnotic beauty of the snake in Punnagavarali ragam set to Adhi thalam.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">7
+                    &nbsp;·&nbsp;</span>THILLANA</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">Thillana is a traditional finale dance composition in Bharatanatyam, celebrated for its intricate footwork, rhythmic patterns, and sculpturesque poses. A vibrant celebration of Lord Krishna, this thillana captures his playful charm, grace, and divine beauty. Composition of the legendary composer, Shri Lalgudi Jayaraman in Madhuvanthi ragam set to Adhi thalam.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">8
+                    &nbsp;·&nbsp;</span>NINRANDA MAYILONDRU</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A vivid celebration of Krishna in the enchanting landscape of Brindavan, where peacocks dance, bees hum, and Krishna fills the air with the melody of his flute. Through graceful nritta and expressive abhinaya, the composition journeys from the beauty of nature to an inward discovery of the divine Brindavan within, culminating in the joyful invocation of Govinda and Radhe. A composition of Oothukadu Venkata Kavi.</p>
+              </div>
+            </li>
+            <li _ngcontent-ng-c2308020386="">
+              <div _ngcontent-ng-c2308020386="" class="program-body">
+                <h3 _ngcontent-ng-c2308020386=""><span _ngcontent-ng-c2308020386="" class="program-number">9
+                    &nbsp;·&nbsp;</span>MANGALAM</h3>
+                <p _ngcontent-ng-c2308020386="" class="program-desc">A brief finale composition, whereby the dancer thanks God, her Guru and the audience for the completion of this recital.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section _ngcontent-ng-c2308020386="" aria-label="Dancer profile" class="section-card">
+          <div _ngcontent-ng-c2308020386="" class="section-header"><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-left">🌸</span>
+            <h2 _ngcontent-ng-c2308020386="">Narthaki</h2><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-right">🌸</span>
+          </div>
+          <article _ngcontent-ng-c2308020386="" class="profile-card profile-full">
+            <div _ngcontent-ng-c2308020386="" class="photo-frame"><img _ngcontent-ng-c2308020386=""
+                src="./image10.jpg" alt="Anannya Karthikeyan" class="dancer-photo"></div>
+            <div _ngcontent-ng-c2308020386="" class="profile-text">
+              <h3 _ngcontent-ng-c2308020386="" class="profile-name">Anannya Karthikeyan</h3>
+              <p _ngcontent-ng-c2308020386=""> Anannya is a sophomore at Emerald High School and has been learning Bharatanatyam for the past 8 years. She started her tutelage under the guidance of Guru Smt. Sweta Dixit and currently she has been learning under the able guidance of Guru Smt. Meenakshi Ganesan for the past 2 years. She is also learning Carnatic music for the past 5 years. </p>
+              <p _ngcontent-ng-c2308020386=""> Anannya has been a dance lover since the age of 5. In class, she is a quiet observer, enthusiastic learner, and has been an accountable teaching assistant to younger kids in her dance school. Apart from dance, Anannya loves singing, reading books, and spending time with family. </p>
+              <p _ngcontent-ng-c2308020386=""> She has participated and won accolades in competitions such as OSAAT, Papanasam Sivan, Art of India, and Veenadhari. Anannya is currently doing her diploma in Bharatanatyam under Aria University to deepen her knowledge of dance. She also completed the Junior Certification course in Bharatanatyam in SAMPADA. </p>
+            </div>
+          </article>
+        </section>
+        <section _ngcontent-ng-c2308020386="" aria-label="Orchestra" class="section-card">
+          <div _ngcontent-ng-c2308020386="" class="section-header"><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-left">🌸</span>
+            <h2 _ngcontent-ng-c2308020386="">The Orchestra</h2><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-right">🌸</span>
+          </div>
+          <p _ngcontent-ng-c2308020386="" class="orchestra-note"> A Bharatanatyam performance is never a solo — it is a
+            temple ritual conducted together. We are deeply honored to present these distinguished artists. </p>
+          <div _ngcontent-ng-c2308020386="" class="orchestra-grid">
+            <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-featured">
+              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
+                  src="./image2.png" alt="Guru Meenakshi Ganesan" class="orch-photo"></div>
+              <div _ngcontent-ng-c2308020386="" class="orch-bio">
+                <div _ngcontent-ng-c2308020386="" class="orch-role">Guru Meenakshi Ganesan</div>
+                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Guru Meenakshi Ganesan</h3>
+                <p _ngcontent-ng-c2308020386=""> Guru Meenakshi Ganesan is the Founder and Artistic Director of the Kalaanjali School of Dance (Kalaanjali Dance Company), established in 2003. She began her Bharatanatyam training at the age of six under her aunt <strong _ngcontent-ng-c2308020386="">Guru Prema Nagasundaram</strong> and <strong _ngcontent-ng-c2308020386="">Guru Padmini Radhakrishnan</strong>, and holds the <strong _ngcontent-ng-c2308020386="">Visharad degree</strong> and a <strong _ngcontent-ng-c2308020386="">Master’s degree in Bharatanatyam</strong>. She is a recent graduate from her <strong _ngcontent-ng-c2308020386="">second Master’s degree in Dance from Aria University</strong>, and is pursuing her PhD in Dance from the same, continuing her scholarly engagement with the art form. </p>
+                <p _ngcontent-ng-c2308020386=""> With <strong _ngcontent-ng-c2308020386="">over 3,000 performances</strong> to her credit across <strong _ngcontent-ng-c2308020386="">India, the UK, Canada, and the United States</strong>, Guru Meenakshi is an accomplished performer and choreographer. Her contributions to Indian classical dance have earned her several honors, including the prestigious title <strong _ngcontent-ng-c2308020386="">“Nritya Mayuri” (Dancing Peacock)</strong> conferred by the <strong _ngcontent-ng-c2308020386="">Ministry of Education, Government of India</strong>. She has collaborated extensively with eminent musicians and dancers and has led numerous thematic and ensemble productions across the U.S. </p>
+                <p _ngcontent-ng-c2308020386=""> A dedicated teacher and mentor, Guru Meenakshi has successfully guided <strong _ngcontent-ng-c2308020386="">over 50 Arangetrams</strong> through Kalaanjali. Her students have received accolades at renowned platforms such as the <strong _ngcontent-ng-c2308020386="">Cleveland Thyagaraja Aradhana competitions, FETNA, the prestigious National Young Arts (The National Foundation for the Advancement of Artists)</strong>. She currently trains students in <strong _ngcontent-ng-c2308020386="">Madison, Wisconsin</strong>, and the <strong _ngcontent-ng-c2308020386="">San Francisco Bay Area</strong>, as well as in <strong _ngcontent-ng-c2308020386="">India and Canada</strong>, through both in-person and online instruction. </p>
+                <p _ngcontent-ng-c2308020386=""> She was recognized as a <strong _ngcontent-ng-c2308020386="">Master Artist</strong> by the <strong _ngcontent-ng-c2308020386="">Wisconsin Arts Board</strong> from 2015 to 2021, later serving on its board in 2022. She is the <strong _ngcontent-ng-c2308020386="">first recipient of the Tiruvarur Nagarajan Award (2024)</strong> from Chennai, Silicon Andhra award May 2026, and continues to contribute to the growth of Bharatanatyam through teaching, choreography, and arts advocacy. Based in <strong _ngcontent-ng-c2308020386="">Dublin, California</strong>, Guru Meenakshi remains deeply committed to nurturing the next generation of dancers. </p>
+              </div>
+            </article>
+            <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
+              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
+                  src="./image7.jpg" alt="Srinath Bala" class="orch-photo"></div>
+              <div _ngcontent-ng-c2308020386="" class="orch-bio">
+                <div _ngcontent-ng-c2308020386="" class="orch-role">Mridangam</div>
+                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Srinath Bala</h3>
+                <p _ngcontent-ng-c2308020386=""> Srinath Bala is a versatile percussionist with varied styles blended rhythmically into one. Having been initiated by Late Sri. Krishnan (Palghat Sri Mani Iyer style), he received intensive guidance under Sri. R. Ramesh (Karaikudi Mani Style) in Chennai, and later under Maestro Umayalpuram K. Sivaraman. To his credit, he has uniquely combined the kannakku and naadam aspects from various gurus. </p>
+                <p _ngcontent-ng-c2308020386=""> He has accompanied the topmost senior artists performing in India, Canada, Zambia, Singapore, and the US, and has also played in Jugalbandis and TalaVadya Concerts to showcase the solo percussion aspects. He has various recordings and has given lecture-demonstrations on <strong _ngcontent-ng-c2308020386="">LAYAM</strong>. In 2006, he presented a TalaVadya concert titled <strong _ngcontent-ng-c2308020386="">“Music Through Membranes”</strong>. </p>
+                <p _ngcontent-ng-c2308020386=""> Being a recipient of the <strong _ngcontent-ng-c2308020386="">PG Arts Award</strong>, <strong _ngcontent-ng-c2308020386="">MSAC Artist Awards</strong>, and titles <strong _ngcontent-ng-c2308020386="">“Kala Shreshtha”</strong> and <strong _ngcontent-ng-c2308020386="">“Paramparaa Rakshak”</strong>, he has over 30 years of concert experience and is an extremely well-sought-after artist for music and dance concerts. He has been teaching students for many years and has successfully trained many students, who currently play Mridangam, Ghatam, and Kanjira actively in various music circles. </p>
+              </div>
+            </article>
+            <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
+              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
+                  src="./image8.jpg" alt="Surya Ganesan" class="orch-photo"></div>
+              <div _ngcontent-ng-c2308020386="" class="orch-bio">
+                <div _ngcontent-ng-c2308020386="" class="orch-role">Vocalist</div>
+                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Surya Ganesan</h3>
+                <p _ngcontent-ng-c2308020386=""> Surya Ganesan is the disciple of <strong
+                    _ngcontent-ng-c2308020386="">Paramaguru Shri Chitravina Narasimhan</strong> and <strong
+                    _ngcontent-ng-c2308020386="">Sangeet Samrat Shri Chitravina N Ravikiran</strong> and has been
+                  learning carnatic vocal since the age of 4. He has won several prizes in regional and national
+                  Carnatic vocal competitions in the USA including the title of <strong
+                    _ngcontent-ng-c2308020386="">Carnatic Star (MN)</strong> and many prizes at the <strong
+                    _ngcontent-ng-c2308020386="">Cleveland Thyagaraja Aradhana</strong>. Post his Arangetram in 2018,
+                  Surya has been a regular performer at the prestigious Chennai margazhi seasons in and the Cleveland
+                  Thyagaraja Aradhana. He was also awarded the Best Carnatic Vocalist award at the Global Music
+                  Competitions held by Spring Nectar Foundation. Surya has been a lead vocalist for several dance
+                  Arangetrams and recitals. </p>
+                <p _ngcontent-ng-c2308020386=""> Apart from Carnatic Vocal, Surya is blessed to be under the tutelage of
+                  <strong _ngcontent-ng-c2308020386="">Kalaimamani Shri. Tiruvarur Vaidyanathan</strong> for Mridangam
+                  and regularly accompanies several artists in the prestigious Chennai margazhi season and the Cleveland
+                  Aradhana. Surya is a recent graduate of <strong _ngcontent-ng-c2308020386="">UC Davis</strong> and has
+                  been the Vice President and Road Captain of the UC Davis Cycling team and the treasurer of the UC
+                  Davis carnatic music team Dhvani. </p>
+              </div>
+            </article>
+            <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
+              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
+                  src="./image5.jpg" alt="Sandhya Srinath" class="orch-photo"></div>
+              <div _ngcontent-ng-c2308020386="" class="orch-bio">
+                <div _ngcontent-ng-c2308020386="" class="orch-role">Violin</div>
+                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Sandhya Srinath</h3>
+                <p _ngcontent-ng-c2308020386=""> Sandhya is an innately talented artist who showcases her true talent in every bow. A gold medalist in her master's program in music and an early A-grade awardee for the All India Radio, Sandhya has firmly established the school of Late Shri V. Janakiraman of AIR, Delhi. She learnt, and skillfully absorbed, the styles of maestros Late Shri Lalgudi G Jayaraman and Prof. T.N. Krishnan within her. </p>
+                <p _ngcontent-ng-c2308020386=""> With over 40 years of performances, along with top solo performances worldwide, she has also accompanied many senior musicians and dancers. Some of her coveted awards include the <strong _ngcontent-ng-c2308020386="">Best Young Violinist</strong> award from the <strong _ngcontent-ng-c2308020386="">Music Academy, Chennai</strong>; the <strong _ngcontent-ng-c2308020386="">Individual Artist Award</strong> from both the <strong _ngcontent-ng-c2308020386="">PG Arts Council</strong> and the <strong _ngcontent-ng-c2308020386="">Maryland State Arts Council</strong>. She has also received titles such as <strong _ngcontent-ng-c2308020386="">Naada Brahma Kala Bhooshanam</strong>, <strong _ngcontent-ng-c2308020386="">Naada Brahma Kalai Mani</strong>, <strong _ngcontent-ng-c2308020386="">Vaadhya Kala Bhaarathi</strong>, <strong _ngcontent-ng-c2308020386="">Kala Shreshtha</strong>, and <strong _ngcontent-ng-c2308020386="">Paramparaa Rakshak</strong>. </p>
+                <p _ngcontent-ng-c2308020386=""> She has numerous recordings to her credit and her versatility has led her to take on instrumental ensembles, jugalbandis with Hindustani artists, and fusion concerts with western musicians. Known for her sensitive renditions and scintillating artistry, she is a very highly sought-after artist. She also actively teaches Violin to students all over the US. </p>
+              </div>
+            </article>
+           
+            <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
+              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
+                  src="./image6.jpg" alt="Srivathsa Pasumarthi" class="orch-photo"></div>
+              <div _ngcontent-ng-c2308020386="" class="orch-bio">
+                <div _ngcontent-ng-c2308020386="" class="orch-role">Flute</div>
+                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Srivathsa Pasumarthi</h3>
+                <p _ngcontent-ng-c2308020386=""> Srivathsa Pasumarthi is a seventh-generation flautist from a family of esteemed flutists and flute makers. His musical journey began under the guidance of his father, <strong _ngcontent-ng-c2308020386="">Pasumarthi Venkata Ramana</strong>, and later flourished under the tutelage of renowned flautist <strong _ngcontent-ng-c2308020386="">Shri J. B. Shruthi Sagar</strong> of Chennai, with whom he has been studying for over a decade. </p>
+                <p _ngcontent-ng-c2308020386=""> Srivathsa is also an <strong _ngcontent-ng-c2308020386="">A-graded Mridangam artist of All India Radio, Chennai</strong>. </p>
+              </div>
+            </article>
+             <article _ngcontent-ng-c2308020386="" class="orch-card orch-card-wide">
+              <div _ngcontent-ng-c2308020386="" class="orch-photo-frame"><img _ngcontent-ng-c2308020386=""
+                  src="./image1.png" alt="Sathya Ganesan" class="orch-photo"></div>
+              <div _ngcontent-ng-c2308020386="" class="orch-bio">
+                <div _ngcontent-ng-c2308020386="" class="orch-role">Ghatam</div>
+                <h3 _ngcontent-ng-c2308020386="" class="orch-name">Sathya Ganesan</h3>
+                <p _ngcontent-ng-c2308020386=""> Sathya Ganesan, an 11th grader at Emerald High School,
+                  is a vocalist and ghatam artist. He began learning ghatam at the age of five
+                  under the guidance of the late <strong _ngcontent-ng-c2308020386="">Shri T. H. Subash Chandran</strong> and has continued his
+                  training since 2019 under <strong _ngcontent-ng-c2308020386="">Vidwan Shri N. Guruprasad</strong>. Sathya also pursues
+                  Carnatic vocal music from the age of two under <strong _ngcontent-ng-c2308020386="">Acharya Pitamaha Shri Chitravina
+                  Narasimhan</strong>, <strong _ngcontent-ng-c2308020386="">Sangeet Samrat Shri Chitravina N. Ravikiran</strong>, and <strong _ngcontent-ng-c2308020386="">Vidushi Bhargavi
+                  Balasubramanian</strong>, and presented his vocal <strong _ngcontent-ng-c2308020386="">Arangetram in 2023</strong>. He has received
+                  several honors, including <strong _ngcontent-ng-c2308020386="">“Gaana Tarunarka 2023”</strong>, <strong _ngcontent-ng-c2308020386="">“Live4U Hall of Fame 2024”</strong>,
+                  <strong _ngcontent-ng-c2308020386="">“YADA Youth Ambassador 2024”</strong>, <strong _ngcontent-ng-c2308020386="">“Youth Cultural Ambassador Awards 2024”</strong>, and the
+                  <strong _ngcontent-ng-c2308020386="">“Nadha Pallava Award 2025.”</strong> Sathya regularly performs as an accompanist and
+                  vocalist during the Chennai December season and around the United States,
+                  including at the <strong _ngcontent-ng-c2308020386="">Cleveland Thyagaraja Aradhana</strong> and the <strong _ngcontent-ng-c2308020386="">Indian Fine Arts Academy
+                  of San Diego</strong>. He has also had the privilege of sharing the stage with
+                  distinguished senior stalwarts in Indian classical music. </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section _ngcontent-ng-c2308020386="" aria-label="Chief Guest and Guest of Honor" class="section-card">
+          <div _ngcontent-ng-c2308020386="" class="section-header"><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-left">🌸</span>
+            <h2 _ngcontent-ng-c2308020386="">Distinguished Guests</h2><span _ngcontent-ng-c2308020386=""
+              aria-hidden="true" class="kolam-right">🌸</span>
+          </div>
+          <div _ngcontent-ng-c2308020386="" class="guests-row">
+            <div _ngcontent-ng-c2308020386="" class="guest-card">
+              <div _ngcontent-ng-c2308020386="" class="guest-label">Chief Guest</div>
+              <div _ngcontent-ng-c2308020386="" class="guest-name">Shivakumar Bhat</div>
+            </div>
+            <div _ngcontent-ng-c2308020386="" class="guest-card">
+              <div _ngcontent-ng-c2308020386="" class="guest-label">Chief Guest</div>
+              <div _ngcontent-ng-c2308020386="" class="guest-name">Vasanthi Venkatraman</div>
+            </div>
+            <div _ngcontent-ng-c2308020386="" class="guest-card">
+              <div _ngcontent-ng-c2308020386="" class="guest-label">Chief Guest</div>
+              <div _ngcontent-ng-c2308020386="" class="guest-name">Kavita Tirumalai</div>
+            </div>
+          </div>
+        </section>
+        <section _ngcontent-ng-c2308020386="" aria-label="Acknowledgements" class="section-card thankyou-card">
+          <div _ngcontent-ng-c2308020386="" class="section-header"><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-left">🌸</span>
+            <h2 _ngcontent-ng-c2308020386="">Gratitude</h2><span _ngcontent-ng-c2308020386="" aria-hidden="true"
+              class="kolam-right">🌸</span>
+          </div>
+          <p _ngcontent-ng-c2308020386="" class="sloka-trans">"The Guru is Brahma, the Guru is Vishnu, the Guru is the
+            great Lord Shiva…"</p>
+          <p _ngcontent-ng-c2308020386=""> I am eternally thankful to all the people, from the far-away motivators to my dear ones, who have all helped me, shaped me, and reached this milestone of my Arangetram. To my Guru, <strong _ngcontent-ng-c2308020386="">Smt. Meenakshi Ganesan</strong>, thank you for helping me build the passion I have for Bharatanatyam and sharing all your knowledge with such dedication and joy. </p>
+          <p _ngcontent-ng-c2308020386=""> To my <strong _ngcontent-ng-c2308020386="">Amma and Appa</strong>, words cannot express my gratitude for your unconditional love and faith in me, and every sacrifice you have made to help me pursue my dreams. </p>
+          <p _ngcontent-ng-c2308020386=""> To my <strong _ngcontent-ng-c2308020386="">grandparents and my extended family</strong>, thank you for your constant blessings which have always given me the confidence and strength to keep moving forward. </p>
+          <p _ngcontent-ng-c2308020386=""> To my <strong _ngcontent-ng-c2308020386="">friends and dance family</strong>, thank you for standing beside me with your endless support and encouragement every step of the way. </p>
+          <div _ngcontent-ng-c2308020386="" class="divider"></div>
+        </section>
+      </main>
+    </app-brochure><!--container--></app-root>
+  <script src="polyfills.js" type="module"></script>
+  <script src="main.js" type="module"></script>
+
+  <div id="hl-aria-live-message-container" aria-live="polite" class="visually-hidden"></div>
+  <div id="hl-aria-live-alert-container" role="alert" aria-live="assertive" class="visually-hidden"></div><span
+    id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span>
+</body>
+
+</html>
